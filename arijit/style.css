@@ -1,0 +1,1251 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: #2c2b2b;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    height: 98vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* position: relative; */
+    /* position: fixed; */
+    /* border: 1px solid white; */
+}
+
+header aside {
+    /* border: 1px solid white; */
+    width: 25%;
+    height: 90%;
+    background-color: #14251d;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+header .mainSide {
+    /* border: 1px solid white; */
+    width: 75%;
+    height: 90%;
+    background: #1d2420;
+    overflow-x: hidden;
+    /* overflow-y: scroll; */
+    background-image: url(back4.jpg);
+    background-repeat: no-repeat;
+
+
+}
+
+header .mainBottom {
+    /* border: 1px solid white; */
+    width: 100%;
+    height: 10%;
+    background: #10240f;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+header .sideBar h1 {
+    color: white;
+    text-shadow: #FC0 1px 0 2px;
+    font-weight: 500;
+    font-family: Chakra Petch;
+    margin: 0 25px;
+
+    text-align: center;
+    font-size: 2vw;
+
+}
+
+header .sideBar .mySelf {
+    margin: 20px;
+    padding: 10px;
+    background: #111e0f;
+    /* margin-top: 30px; */
+    /* border: 1px solid #FC0; */
+
+}
+
+header .sideBar .mySelf h4 {
+    padding: 8px;
+    color: rgb(178, 177, 177);
+
+
+}
+
+header .sideBar .mySelf h4 i {
+    color: #FC0;
+    margin-right: 10px;
+    background-color: #040703;
+    border: 1px solid white;
+    padding: 5px;
+
+    border-radius: 50%;
+}
+
+header .sideBar .mySelf h4:hover {
+    background: rgb(106, 105, 105, .3);
+}
+
+header .sideBar .mySelf :hover {}
+
+header .sideBar .songList {
+    position: relative;
+    width: 100%;
+    height: 360px;
+    /* border: 2px solid #ffffff; */
+    margin-top: 20px;
+    overflow: auto;
+
+}
+
+
+
+
+header .sideBar .songList::-webkit-scrollbar {
+    display: none;
+}
+
+header .sideBar .songList li {
+    list-style: none;
+    display: flex;
+    position: relative;
+    padding: 5px 0 5px 20px;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}
+
+header .sideBar .songList li:hover {
+    background: rgb(105, 105, 105, 0.2);
+}
+
+header .sideBar .songList li span {
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(199, 179, 98);
+}
+
+header .sideBar .songList li img {
+    width: 38px;
+    height: 38px;
+    margin-left: 18px;
+}
+
+header .sideBar .songList li h5 {
+    margin-left: 18px;
+    width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /* border: 1px solid white; */
+    color: #E2DFD2;
+}
+
+header .sideBar .songList li .artist {
+    font-size: 13px;
+    color: rgb(178, 177, 177);
+}
+
+header .sideBar .songList li i {
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+
+
+header .sideBar .songList li i:active {
+    color: #fc0;
+}
+
+
+
+header .mainBottom {
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+header .mainBottom .disco {
+    width: 35px;
+    height: 35px;
+    /* border: 1px solid white; */
+    /* border-radius: 50%; */
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 5px;
+}
+
+header .mainBottom .disco .disco1 {
+    width: 3px;
+    height: 10px;
+    background-color: #FC0;
+    border-radius: 10px 10px 0px 0px;
+    margin-left: 3px;
+    margin-top: 3px;
+    animation: wave .8s linear infinite;
+}
+
+header .mainBottom .disco .disco1:nth-child(2) {
+    height: 16px;
+    animation-delay: .3s;
+}
+
+header .mainBottom .disco .disco1:nth-child(3) {
+    height: 13px;
+    animation-delay: .5s;
+}
+
+header .mainBottom .disco .disco1:nth-child(4) {
+    height: 17px;
+    animation-delay: .8s;
+}
+
+/* js css classes */
+
+header .mainBottom .active1 .disco1 {
+    animation: wave .8s linear infinite;
+}
+
+header .mainBottom .disco .disco1:nth-child(2) {
+
+    animation-delay: .3s;
+}
+
+header .mainBottom .disco .disco1:nth-child(3) {
+
+    animation-delay: .5s;
+}
+
+header .mainBottom .disco .disco1:nth-child(4) {
+    animation-delay: .8s;
+}
+
+@keyframes wave {
+    0% {
+        height: 8px;
+    }
+
+    25% {
+        height: 13px;
+    }
+
+    50% {
+        height: 15px;
+    }
+
+    100% {
+        height: 10px;
+    }
+
+}
+
+header .mainBottom img {
+    height: 38px;
+    width: 38px;
+    margin-left: 15px;
+}
+
+header .mainBottom h5 {
+    width: 135px;
+    font-size: 13px;
+    margin-left: 15px;
+    color: #fff;
+    line-height: 17px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /* border: 1px solid white; */
+}
+
+header .mainBottom .mainIcon {
+    font-size: 22px;
+    color: #fff;
+    margin: 0 20px 0 10px;
+    outline: none;
+    display: flex;
+    align-items: center;
+}
+
+header .mainBottom .mainIcon i {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+header .mainBottom .mainIcon .play_btn {
+    color: rgb(244, 230, 174);
+}
+
+header .mainBottom .mainIcon .play_btn:active {
+    color: white;
+}
+
+header .mainBottom .mainIcon i:hover {
+    color: #fc0;
+}
+
+header .mainBottom .mainIcon .fa-download {
+    margin-right: 3vw;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 6.5px;
+    font-size: 15px;
+    color: #fc0;
+
+
+}
+
+header .mainBottom #mainTime {
+    color: white;
+    margin: 0 8px;
+}
+
+header .mainBottom .timeBarscroll {
+    position: relative;
+    width: 30%;
+    height: 5px;
+    background-color: rgb(129, 127, 127);
+    margin: 0px 5px 0px 0px;
+
+
+}
+
+header .mainBottom .timeBarscroll .scrollbar2 {
+    position: absolute;
+    background-color: #fc0;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    transition: 1s linear;
+}
+
+header .mainBottom .timeBarscroll .dot {
+    position: absolute;
+    background-color: #fc0;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    left: 0%;
+    top: -1.5px;
+    transition: 1s linear;
+}
+
+header .mainBottom .timeBarscroll .dot::before {
+
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fc0;
+    border-radius: 50%;
+    left: -4.5px;
+    top: -3px;
+}
+
+header .mainBottom .timeBarscroll input {
+    position: absolute;
+    width: 100%;
+    top: -6.5px;
+
+    cursor: pointer;
+    z-index: 999999999999999999;
+    opacity: 0;
+}
+
+header .mainBottom .myimg {
+    margin-left: 8vw;
+    margin-right: 4vw;
+}
+
+header .mainSide .topHead {
+    width: 95%;
+    height: 50%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    /* Use rgba for transparency */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    display: flex;
+    margin-left: 2vw;
+    gap: 10px;
+    /* border: 1px solid white; */
+    margin-top: 10px;
+}
+
+header .mainSide .topHead .text {
+    margin-top: 15px;
+    margin-left: 30px;
+    padding: 10px;
+    width: 60%;
+
+
+    /* border: 1px solid white; */
+    /* height: 300px; */
+}
+
+header .mainSide .topHead .text h1 {
+    color: #fc0;
+    /* opacity: 0.8; */
+    font-family: Chakra Petch;
+    margin-top: 10px;
+    font-weight: 500;
+
+}
+
+header .mainSide .topHead .text p {
+    margin-top: 13px;
+    margin-right: 90px;
+    color: rgb(228, 228, 228);
+    font-weight: 500;
+}
+
+header .mainSide .topHead .text p span {
+    color: #fc0;
+    font-size: 20px;
+}
+
+header .mainSide .topHead .text .btnx {
+    /* margin-left: 80px; */
+}
+
+header .mainSide .topHead .text button {
+    background-color: #fc0;
+    color: #111e0f;
+    padding: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Chakra Petch;
+    border-radius: 10px;
+
+}
+header .mainSide .topHead .text .sign_btn {
+    background-color: rgba(235, 234, 229, 0.137);
+    color: #FC0;
+    padding: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Chakra Petch;
+    border-radius: 10px;
+    border:1px solid #FC0;
+
+}
+header .mainSide .topHead .text .sign_btn:hover{
+    color: #000000;
+    background-color: #FC0;
+}
+header .mainSide .topHead .text i{
+    color: #fc0;
+    margin-right: 10px;
+    font-size: 19px;
+}
+
+header .mainSide .topHead .text .secondbutton {
+    background: #000000;
+    color: white;
+    padding: 5px 8px;
+    border: 1px solid #FC0;
+    border-radius: 8px;
+}
+
+
+header .mainSide .topHead .mainTopimage {
+    margin-left: 1vw;
+    width: 40%;
+    /* border: 1px solid white; */
+    height: 300px;
+
+
+}
+
+header .mainSide .topHead .mainTopimage img {
+    position: absolute;
+    height: 250px;
+    width: 200px;
+    margin-top: 40px;
+    filter: brightness(90%);
+    border-radius: 25px;
+    margin-left: 20px;
+    box-shadow: rgba(248, 248, 254, 0.945) 0px 10px 40px -20px, rgb(237, 234, 234) 0px 10px 40px -10px, rgb(236, 237, 238) 0px -2px 6px 0px inset;
+}
+
+
+header .mainSide .search {
+    position: relative;
+    width: 70%;
+    padding: 1px 1px;
+    border-radius: 10px;
+    border: 1px solid #fc0;
+    color: white;
+    /* font-size: 19px; */
+
+}
+
+header .mainSide .search::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(184, 184, 184, .1);
+    /* margin-right: 10px; */
+    border-radius: 10px;
+    backdrop-filter: 5px;
+    z-index: -1;
+}
+
+/* Select the input element and change the color of the placeholder text */
+input[type="search"]::placeholder {
+    color: #FC0;
+    /* Change to the desired color */
+}
+
+header .mainSide .search .searchresult {
+
+    position: absolute;
+    width: 100%;
+    height: 185px;
+    /* border: 1px solid white; */
+    /* background: #10240f; */
+    border-radius: 10px;
+    margin-top: 10px;
+    overflow: auto;
+}
+
+header .mainSide .search .searchresult::-webkit-scrollbar {
+    scroll-behavior: smooth;
+    display: none;
+}
+
+header .mainSide .search .searchresult .card {
+
+    width: 100%;
+    min-height: 45px;
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(92, 90, 90, 0.759);
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: white;
+    padding: 0;
+    display: none;
+}
+
+header .mainSide .search .searchresult .card img {
+    height: 40px;
+    width: 40px;
+    margin-left: 5px;
+    border-radius: 10px;
+    filter: brightness(100%);
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+header .mainSide .search .searchresult .card .content {
+    margin-left: 65px;
+    color: #FC0;
+}
+
+header .mainSide .search .searchresult .card .artist {
+    font-size: 16px;
+    color: rgb(203, 201, 147);
+}
+
+header .mainSide .search i {
+    font-size: 13px;
+    padding: 3px 0 0 10px;
+}
+
+input[type="search"] {
+    border: none;
+    /* or */
+    border: 0;
+    /* Optionally, you can remove the outline */
+    outline: none;
+}
+
+header .mainSide .search input {
+    border: none;
+    background: none;
+    padding: 3px 10px;
+    color: white;
+    width: 90%;
+    font-size: 17px;
+}
+
+
+header .mainSide .foryou {
+    /* border: 1px solid white; */
+    width: 98%;
+    height: auto;
+    margin: auto;
+    padding: 3px;
+    /* margin-top: 15px; */
+    background-color: rgba(0, 0, 0, 0);
+    /* Use rgba for transparency */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+
+}
+
+header .mainSide .foryou .headingForyou {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .mainSide .foryou .headingForyou i {
+    cursor: pointer;
+    transition: .1s linear;
+    color: #FC0;
+    /* background: #70706f; */
+    border-radius: 50%;
+    padding: 3px;
+    margin-right: 3px;
+}
+
+header .mainSide .foryou .headingForyou i:hover {
+    color: black;
+    background-color: #fc0;
+}
+
+header .mainSide .foryou .forYousong {
+    display: flex;
+    width: 100%;
+    height: 140px;
+    /* border: 1px solid white; */
+    margin-top: 10px;
+    overflow: auto;
+    scroll-behavior: smooth;
+
+}
+
+header .mainSide .foryou .forYousong::-webkit-scrollbar {
+    display: none;
+}
+
+header .mainSide .foryou .forYousong li {
+    min-width: 100px;
+    height: 130px;
+    /* padding: 5px; */
+    /* align-items: center; */
+    list-style-type: none;
+    margin-right: 10px;
+    transition: .3s linear;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background-color: rgb(9, 19, 9);
+    margin-top: 10px;
+}
+
+
+
+header .mainSide .foryou .forYousong li:hover {
+    background-color: rgb(30, 44, 32);
+
+}
+
+header .mainSide .foryou .forYousong li .img_play {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header .mainSide .foryou .forYousong li .img_play img {
+    height: 100%;
+    width: 100%;
+    filter: brightness(80%);
+
+
+}
+
+header .mainSide .foryou .forYousong li .img_play img:hover {
+    filter: brightness(50%);
+}
+
+header .mainSide .foryou .forYousong li .img_play i {
+    position: absolute;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s linear;
+    opacity: 0;
+}
+
+header .mainSide .foryou .forYousong li:hover .img_play i {
+
+    opacity: 1;
+    color: #FC0;
+}
+
+header .mainSide .foryou .forYousong li h5 {
+    padding: 5px 0px 0px 5px;
+    line-height: 15px;
+    font-size: 10px;
+    width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 400;
+    font-size: 13.5px;
+}
+
+header .mainSide .foryou .forYousong li h5 .artist {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 9px;
+    color: #E2DFD2;
+}
+
+
+
+header .mainSide .mainArtist {
+    /* border: 1px solid white; */
+    width: 98%;
+    height: auto;
+    margin: auto;
+    /* margin-top: 15px; */
+    /* margin-top: 15px; */
+    background-color: rgba(0, 0, 0, 0);
+    /* Use rgba for transparency */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 5px;
+
+}
+
+header .mainSide .mainArtist .headingForyou i {
+    cursor: pointer;
+    transition: .1s linear;
+    color: #FC0;
+    /* background: #70706f; */
+    border-radius: 50%;
+    padding: 3px;
+    margin-right: 3px;
+}
+
+header .mainSide .mainArtist .headingForyou i:hover {
+    color: black;
+    background-color: #fc0;
+}
+
+header .mainSide .mainArtist .headingForyou {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+header .mainSide .mainArtist .forArtist {
+    display: flex;
+    min-width: 100%;
+    height: 140px;
+    /* border: 1px solid white; */
+    margin-top: 10px;
+    overflow: auto;
+    scroll-behavior: smooth;
+
+}
+
+header .mainSide .mainArtist .forArtist::-webkit-scrollbar {
+    display: none;
+}
+
+header .mainSide .mainArtist .forArtist li {
+    min-width: 100px;
+    height: 90px;
+    list-style-type: none;
+    margin-right: 10px;
+    transition: .3s linear;
+    cursor: pointer;
+}
+
+header .mainSide .mainArtist .forArtist li:hover {
+    filter: brightness(50%);
+}
+
+
+/* 
+header .mainSide .mainArtist .forArtist li:hover{
+    background-color: rgb(30, 44, 32);
+} */
+
+header .mainSide .mainArtist .forArtist li .img_play {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .mainSide .mainArtist .forArtist li .img_play img {
+    height: 100%;
+    width: 100%;
+    margin-top: 25px;
+    filter: brightness(100%);
+    border-radius: 50%;
+    border: 1px solid #fc0;
+}
+
+.mainSide .about {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    justify-content: center;
+}
+
+.mainSide .about .mainAbout {
+    width: 55%;
+    height: 50vh;
+    border: 1px solid white;
+    margin: auto;
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0);
+    /* Use rgba for transparency */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 20px;
+}
+
+.mainSide .about .mainAbout img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.mainSide .about .mainAbout img:hover {
+    scale: 0.3;
+}
+
+.mainSide .about .mainAbout .text {
+    width: 60%;
+}
+
+.mainSide .about .mainAbout .text h1 {
+    margin-bottom: 20px;
+    margin-top: 8px;
+
+    color: #FC0;
+}
+
+.mainSide .about .mainAbout .text button {
+    background-color: #fc0;
+    color: #111e0f;
+    padding: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Chakra Petch;
+    border-radius: 10px;
+
+}
+
+.mainSide .about .mainplY {
+    width: 40%;
+    height: 50vh;
+    border: 1px solid white;
+    margin: auto;
+    /* display: flex; */
+    padding: 20px 20px;
+
+
+
+    background-color: rgba(0, 0, 0, 0);
+    /* Use rgba for transparency */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 20px;
+}
+
+
+.mainSide .about .mainplY h1 {
+    margin-bottom: 20px;
+    color: #FC0;
+}
+
+.mainSide .about .mainplY button {
+    background-color: #fc0;
+    color: #111e0f;
+    padding: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Chakra Petch;
+    border-radius: 10px;
+
+}
+
+.phones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.phones H1 {
+    font-size: 40px;
+    margin: auto;
+    align-items: center;
+    margin-left: 30px;
+}
+
+@media (max-width: 1200px) {
+    header aside {
+        /* border: 1px solid white; */
+        width: 35%;
+        padding: 0 5px;
+
+    }
+
+    header .sideBar .songList li {
+
+        display: flex;
+        position: relative;
+        padding: 5px 0 5px 5px;
+        align-items: center;
+        margin-bottom: 10px;
+        cursor: pointer;
+
+    }
+
+    header .mainSide {
+        /* border: 1px solid white; */
+        width: 65%;
+        height: 90%;
+        background: #1d2420;
+        overflow-x: hidden;
+        /* overflow-y: scroll; */
+        background-image: url(back4.jpg);
+        background-repeat: no-repeat;
+
+
+    }
+
+
+    header .mainSide .topHead {
+        width: 100%;
+        margin-top: 40px;
+        height: 50%;
+        padding: 5px;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0);
+        /* Use rgba for transparency */
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        display: flex;
+        flex-direction: column-reverse;
+        margin-left: 2vw;
+        gap: 10px;
+        /* border: 1px solid white; */
+        margin-top: 10px;
+    }
+
+    header .mainSide .topHead .text {
+        margin-top: 10px;
+        margin-left: 20px;
+        padding: 10px;
+        width: 100%;
+
+
+        /* border: 1px solid white; */
+        /* height: 300px; */
+    }
+
+    header .mainSide .topHead .text h1 {
+
+        font-size: 25px;
+
+    }
+
+    header .mainSide .topHead .mainTopimage {
+        margin-left: 20px;
+        /* position: fixed-top; */
+        width: 100%;
+        /* border: 1px solid white; */
+        height: 2vh;
+
+
+    }
+
+    header .mainSide .topHead .mainTopimage img {
+
+        display: none;
+
+    }
+
+    .mainSide .about {
+
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin: 40px auto 0 auto;
+        justify-content: center;
+    }
+
+    .mainSide .about .mainAbout {
+        width: 100%;
+        height: 40vh;
+        padding: 10px;
+        align-items: start;
+        display: flex;
+        flex-direction: column-reverse;
+
+        display: flex;
+
+
+
+    }
+
+    .mainSide .about .mainAbout .imgAbout {
+        position: relative;
+        top: 68px;
+        left: 160px;
+    }
+
+    .mainSide .about .mainAbout img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        /* position: absolute; */
+        margin-top: -30px;
+        border: 2px solid white;
+    }
+
+    .mainSide .about .mainAbout .text {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .mainSide .about .mainplY {
+        width: 100%;
+        margin-top: 50px;
+
+    }
+
+    header .mainBottom .disco2 {
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 680px) {
+    header {
+        height: 100vh;
+        /* margin-top: 100px; */
+        width: 100vw;
+    }
+
+    header aside {
+        /* border: 1px solid white; */
+        width: 75%;
+        height: 82.5vh;
+        position: absolute;
+        z-index: 99999;
+        margin-left: -110px;
+        background: #10240f;
+        transition: 0.5s linear;
+        margin-top: 10px;
+        transform: translateX(-100%);
+
+    }
+
+    aside #sidebarOpen {
+        /* display:none; */
+        font-size: 20px;
+        padding-top: 6px;
+        padding-left: 8px;
+
+        position: absolute;
+        right: -40px;
+        background-color: #10240f;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #fc0;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 1s linear;
+
+    }
+
+    header .mainSide {
+        /* border: 1px solid white; */
+        width: 100%;
+        height: 84vh;
+        background: #1d2420;
+
+        background-repeat: no-repeat;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+
+    }
+
+    header .mainSide .topHead {
+        width: 99%;
+        margin-top: 10px;
+        height: 40%;
+        padding: 5px;
+        /* border: 1px solid red; */
+        margin-left: 0.5vw;
+
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    header .mainSide .topHead .text {
+        margin-top: 15px;
+        margin-left: 0px;
+        padding: 10px;
+        width: 100%;
+
+
+        /* border: 1px solid white; */
+        /* height: 300px; */
+    }
+
+    header .mainSide .topHead .text h1 {
+
+        font-size: 32px;
+
+    }
+
+    header .mainSide .topHead .text p {
+     
+        margin-right: 0px;
+       
+       
+        font-size: 17px;
+        
+    }
+
+    header .mainSide .topHead .text button {
+        background-color: #fc0;
+        width: 33%;
+        border: none;
+       
+    
+       
+    
+    }
+    header .mainSide .search {
+        
+        width: 70%;
+        margin-left: 50px;
+        padding: 2px 1px;
+       
+    
+    }
+    header .mainSide .search .searchresult .card {
+
+        width: 100%;
+        min-height: 45px;
+        /* border: 1px solid white; */
+        display: flex;
+        align-items: start;
+        justify-content: none;
+        background-color: rgba(1, 3, 1, 0.896);
+        margin-bottom: 0px;
+        padding: 3px;
+        border: 1px solid #fc0;
+        text-decoration: none;
+        color: white;
+        
+        display: none;
+    }
+    header .mainSide .search .searchresult .card .content {
+        margin-left: 4px;
+        color: #FC0;
+        padding: 3px;
+    }
+    header .mainSide .search .searchresult .card .artist {
+        font-size: 10px;
+        color: rgb(203, 201, 147);
+        align-items: start;
+    }
+    header .mainSide .foryou{
+        margin-top: 40px;
+    }
+    
+
+    header .sideBar .songList {
+        position: relative;
+        width: 100%;
+        height: 460px;
+        margin-top: 20px;
+        overflow: auto;
+        background: #10240f;
+
+
+    }
+    header .sideBar h1 {
+        font-size: 24px;
+
+
+    }
+
+    header .mainBottom {
+        /* border: 1px solid white; */
+        position: absolute;
+        bottom: 0;
+
+    }
+
+    aside #sidebarOpen {
+        display: block;
+    }
+
+    aside #sidebarOpen {
+        color: #fff;
+        display: block;
+    }
+
+
+
+}
